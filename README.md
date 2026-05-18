@@ -358,7 +358,7 @@ Please keep PRs focused — one feature or fix per PR makes review much easier.
 
 ## ⚠️ Disclaimer
 
-> MediTriage is a **demonstration project** and is **not a substitute for professional medical advice, diagnosis, or treatment**. Always consult a qualified healthcare provider for any medical concerns. In a medical emergency, call your local emergency services immediately.
+> MediTriage is a **demonstration project** and is for educational purposes
 
 ---
 
