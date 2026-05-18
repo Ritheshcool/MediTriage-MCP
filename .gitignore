@@ -1,0 +1,25 @@
+# Environments
+.env
+.venv/
+venv/
+
+# Secrets and Credentials
+credentials.json
+token.json
+token.pickle
+mcp-google-calendar-token.json
+client_secret_*.json
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Node
+node_modules/
+
+# OS generated files
+.DS_Store
+Thumbs.db

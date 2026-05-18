@@ -1,0 +1,202 @@
+{
+  "chest tightness": {
+    "base_score": 6,
+    "red_flag": true,
+    "conditions": ["Angina", "Costochondritis", "Anxiety", "GERD"],
+    "specialties": ["Cardiology", "General Medicine"],
+    "age_modifier": { "above_40": 2, "above_60": 3 },
+    "description": "Sensation of pressure or squeezing in the chest"
+  },
+  "chest pain": {
+    "base_score": 7,
+    "red_flag": true,
+    "conditions": ["Angina", "Costochondritis", "Muscle strain", "GERD"],
+    "specialties": ["Cardiology"],
+    "age_modifier": { "above_40": 2, "above_60": 3 },
+    "description": "Pain in the chest area, may radiate to arms or jaw"
+  },
+  "shortness of breath": {
+    "base_score": 5,
+    "red_flag": true,
+    "conditions": ["Asthma", "COPD", "Anxiety", "Anemia"],
+    "specialties": ["Pulmonology", "Cardiology"],
+    "age_modifier": { "above_40": 1, "above_60": 2 },
+    "description": "Difficulty breathing or feeling of breathlessness"
+  },
+  "headache": {
+    "base_score": 2,
+    "red_flag": false,
+    "conditions": ["Tension headache", "Migraine", "Sinusitis", "Dehydration"],
+    "specialties": ["Neurology", "General Medicine"],
+    "age_modifier": {},
+    "description": "Pain or discomfort in the head or scalp region"
+  },
+  "severe headache": {
+    "base_score": 5,
+    "red_flag": true,
+    "conditions": ["Migraine", "Cluster headache", "Intracranial pressure"],
+    "specialties": ["Neurology"],
+    "age_modifier": { "above_50": 2 },
+    "description": "Intense, debilitating headache that disrupts daily activities"
+  },
+  "blurred vision": {
+    "base_score": 4,
+    "red_flag": true,
+    "conditions": ["Migraine aura", "Diabetic retinopathy", "Glaucoma"],
+    "specialties": ["Ophthalmology", "Neurology"],
+    "age_modifier": { "above_50": 2 },
+    "description": "Inability to see fine details or loss of sharpness of vision"
+  },
+  "fever": {
+    "base_score": 2,
+    "red_flag": false,
+    "conditions": ["Viral infection", "Bacterial infection", "Flu"],
+    "specialties": ["General Medicine"],
+    "age_modifier": { "above_60": 1 },
+    "description": "Elevated body temperature above 100.4°F (38°C)"
+  },
+  "high fever": {
+    "base_score": 4,
+    "red_flag": true,
+    "conditions": ["Severe infection", "Dengue", "Typhoid", "UTI"],
+    "specialties": ["General Medicine", "Internal Medicine"],
+    "age_modifier": { "above_60": 2 },
+    "description": "Body temperature above 103°F (39.4°C)"
+  },
+  "cough": {
+    "base_score": 1,
+    "red_flag": false,
+    "conditions": ["Common cold", "Allergies", "Bronchitis"],
+    "specialties": ["General Medicine", "Pulmonology"],
+    "age_modifier": {},
+    "description": "Reflex to clear the throat and breathing passages"
+  },
+  "persistent cough": {
+    "base_score": 3,
+    "red_flag": false,
+    "conditions": ["Bronchitis", "Asthma", "GERD", "Post-nasal drip"],
+    "specialties": ["Pulmonology", "General Medicine"],
+    "age_modifier": { "above_50": 1 },
+    "description": "Cough lasting more than 2-3 weeks"
+  },
+  "back pain": {
+    "base_score": 2,
+    "red_flag": false,
+    "conditions": ["Muscle strain", "Herniated disc", "Sciatica", "Poor posture"],
+    "specialties": ["Orthopedics", "General Medicine"],
+    "age_modifier": { "above_40": 1 },
+    "description": "Pain in the upper or lower back"
+  },
+  "joint pain": {
+    "base_score": 2,
+    "red_flag": false,
+    "conditions": ["Arthritis", "Gout", "Tendinitis", "Overuse injury"],
+    "specialties": ["Orthopedics", "Rheumatology"],
+    "age_modifier": { "above_50": 1 },
+    "description": "Pain, swelling, or stiffness in one or more joints"
+  },
+  "skin rash": {
+    "base_score": 2,
+    "red_flag": false,
+    "conditions": ["Eczema", "Contact dermatitis", "Allergic reaction", "Psoriasis"],
+    "specialties": ["Dermatology"],
+    "age_modifier": {},
+    "description": "Change in skin color, texture, or appearance"
+  },
+  "abdominal pain": {
+    "base_score": 3,
+    "red_flag": false,
+    "conditions": ["Gastritis", "IBS", "Food poisoning", "Appendicitis"],
+    "specialties": ["Gastroenterology", "General Medicine"],
+    "age_modifier": { "above_50": 1 },
+    "description": "Pain in the stomach or belly area"
+  },
+  "nausea": {
+    "base_score": 2,
+    "red_flag": false,
+    "conditions": ["Gastritis", "Food poisoning", "Pregnancy", "Motion sickness"],
+    "specialties": ["Gastroenterology", "General Medicine"],
+    "age_modifier": {},
+    "description": "Feeling of wanting to vomit"
+  },
+  "dizziness": {
+    "base_score": 3,
+    "red_flag": false,
+    "conditions": ["Vertigo", "Low blood pressure", "Anemia", "Inner ear issue"],
+    "specialties": ["Neurology", "ENT"],
+    "age_modifier": { "above_50": 1 },
+    "description": "Feeling lightheaded, unsteady, or faint"
+  },
+  "fatigue": {
+    "base_score": 1,
+    "red_flag": false,
+    "conditions": ["Anemia", "Thyroid disorder", "Sleep disorder", "Stress"],
+    "specialties": ["General Medicine", "Internal Medicine"],
+    "age_modifier": {},
+    "description": "Persistent tiredness or lack of energy"
+  },
+  "sore throat": {
+    "base_score": 1,
+    "red_flag": false,
+    "conditions": ["Pharyngitis", "Tonsillitis", "Common cold", "Strep throat"],
+    "specialties": ["ENT", "General Medicine"],
+    "age_modifier": {},
+    "description": "Pain or irritation in the throat"
+  },
+  "ear pain": {
+    "base_score": 2,
+    "red_flag": false,
+    "conditions": ["Ear infection", "Swimmer's ear", "TMJ", "Wax buildup"],
+    "specialties": ["ENT"],
+    "age_modifier": {},
+    "description": "Pain in or around the ear"
+  },
+  "anxiety": {
+    "base_score": 2,
+    "red_flag": false,
+    "conditions": ["Generalized anxiety", "Panic disorder", "Stress"],
+    "specialties": ["Psychiatry", "General Medicine"],
+    "age_modifier": {},
+    "description": "Persistent feeling of worry, nervousness, or unease"
+  },
+  "insomnia": {
+    "base_score": 2,
+    "red_flag": false,
+    "conditions": ["Stress", "Anxiety", "Sleep apnea", "Depression"],
+    "specialties": ["Psychiatry", "General Medicine"],
+    "age_modifier": {},
+    "description": "Difficulty falling or staying asleep"
+  },
+  "palpitations": {
+    "base_score": 4,
+    "red_flag": true,
+    "conditions": ["Arrhythmia", "Anxiety", "Thyroid disorder", "Caffeine excess"],
+    "specialties": ["Cardiology"],
+    "age_modifier": { "above_40": 1 },
+    "description": "Feeling of rapid, fluttering, or pounding heartbeat"
+  },
+  "numbness": {
+    "base_score": 3,
+    "red_flag": true,
+    "conditions": ["Carpal tunnel", "Neuropathy", "Vitamin deficiency"],
+    "specialties": ["Neurology"],
+    "age_modifier": { "above_50": 1 },
+    "description": "Loss of sensation or tingling in body parts"
+  },
+  "weight loss": {
+    "base_score": 3,
+    "red_flag": true,
+    "conditions": ["Thyroid disorder", "Diabetes", "Stress", "Malabsorption"],
+    "specialties": ["Internal Medicine", "Endocrinology"],
+    "age_modifier": { "above_50": 1 },
+    "description": "Unintentional decrease in body weight"
+  },
+  "frequent urination": {
+    "base_score": 2,
+    "red_flag": false,
+    "conditions": ["UTI", "Diabetes", "Prostate issues", "Overactive bladder"],
+    "specialties": ["Urology", "General Medicine"],
+    "age_modifier": { "above_50": 1 },
+    "description": "Needing to urinate more often than usual"
+  }
+}

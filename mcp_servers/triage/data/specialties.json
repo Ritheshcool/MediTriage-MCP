@@ -1,0 +1,77 @@
+{
+  "Cardiology": {
+    "triggers": ["chest tightness", "chest pain", "palpitations", "shortness of breath"],
+    "description": "Heart and cardiovascular system",
+    "urgency_note": "Cardiac symptoms in patients over 40 should be prioritized"
+  },
+  "Neurology": {
+    "triggers": ["headache", "severe headache", "blurred vision", "dizziness", "numbness", "seizure"],
+    "description": "Brain and nervous system",
+    "urgency_note": "Sudden onset neurological symptoms need prompt evaluation"
+  },
+  "Pulmonology": {
+    "triggers": ["cough", "persistent cough", "shortness of breath", "wheezing", "chest congestion"],
+    "description": "Lungs and respiratory system",
+    "urgency_note": "Breathing difficulty combined with fever needs priority"
+  },
+  "Orthopedics": {
+    "triggers": ["back pain", "joint pain", "fracture", "sprain", "muscle pain"],
+    "description": "Bones, joints, and musculoskeletal system",
+    "urgency_note": "Acute injuries should be seen sooner"
+  },
+  "Dermatology": {
+    "triggers": ["skin rash", "acne", "eczema", "skin lesion", "itching"],
+    "description": "Skin, hair, and nail conditions",
+    "urgency_note": "Rapidly spreading rashes need early evaluation"
+  },
+  "Gastroenterology": {
+    "triggers": ["abdominal pain", "nausea", "vomiting", "diarrhea", "bloating", "acid reflux"],
+    "description": "Digestive system and gastrointestinal tract",
+    "urgency_note": "Persistent symptoms over a week should be seen promptly"
+  },
+  "ENT": {
+    "triggers": ["sore throat", "ear pain", "nasal congestion", "hearing loss", "tinnitus"],
+    "description": "Ear, nose, and throat conditions",
+    "urgency_note": "Sudden hearing loss is a priority condition"
+  },
+  "Ophthalmology": {
+    "triggers": ["blurred vision", "eye pain", "redness in eyes", "vision loss"],
+    "description": "Eye and vision care",
+    "urgency_note": "Sudden vision changes need immediate attention"
+  },
+  "Psychiatry": {
+    "triggers": ["anxiety", "insomnia", "depression", "panic attacks", "mood swings"],
+    "description": "Mental health and behavioral conditions",
+    "urgency_note": "Patients in distress should be prioritized"
+  },
+  "General Medicine": {
+    "triggers": ["fever", "fatigue", "cold", "body ache", "mild cough", "weight loss"],
+    "description": "Primary care and general health conditions",
+    "urgency_note": "Default specialty when no specific match is found"
+  },
+  "Internal Medicine": {
+    "triggers": ["high fever", "weight loss", "fatigue", "frequent urination"],
+    "description": "Complex internal conditions and multi-system diseases",
+    "urgency_note": "Unexplained systemic symptoms need thorough workup"
+  },
+  "Urology": {
+    "triggers": ["frequent urination", "painful urination", "blood in urine"],
+    "description": "Urinary tract and male reproductive system",
+    "urgency_note": "Blood in urine needs prompt investigation"
+  },
+  "Endocrinology": {
+    "triggers": ["weight loss", "weight gain", "excessive thirst", "fatigue"],
+    "description": "Hormonal and metabolic disorders",
+    "urgency_note": "Suspected diabetes or thyroid issues need timely evaluation"
+  },
+  "Rheumatology": {
+    "triggers": ["joint pain", "joint stiffness", "swelling", "muscle weakness"],
+    "description": "Autoimmune and inflammatory joint diseases",
+    "urgency_note": "Early diagnosis is key for autoimmune conditions"
+  },
+  "Pediatrics": {
+    "triggers": ["fever", "cough", "rash", "ear pain", "vomiting"],
+    "description": "Medical care for children and adolescents",
+    "urgency_note": "Children with high fever need priority attention"
+  }
+}

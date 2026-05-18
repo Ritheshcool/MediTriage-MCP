@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediTriage — AI Medical Coordinator</title>
+    <meta name="description" content="AI-powered medical triage and appointment booking system using MCP orchestration">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="logo-icon">🏥</span>
+                <span class="logo-text">MediTriage</span>
+            </div>
+            <p class="logo-subtitle">AI Medical Coordinator</p>
+        </div>
+
+        <div class="server-status" id="serverStatus">
+            <h3 class="status-title">MCP Servers</h3>
+            <div class="server-list" id="serverList">
+                <div class="server-item loading">
+                    <span class="server-dot"></span>
+                    <span>Connecting...</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <button class="new-chat-btn" id="newChatBtn" title="Start a new conversation">
+                <span>+</span> New Conversation
+            </button>
+            <div class="sidebar-info">
+                <p>6 MCP Servers • Multi-Agent Orchestration</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Chat Area -->
+    <main class="chat-main">
+        <!-- Header -->
+        <header class="chat-header">
+            <button class="menu-btn" id="menuBtn">☰</button>
+            <div class="header-info">
+                <h1>MediTriage AI</h1>
+                <span class="header-badge" id="headerBadge">6 MCP Servers Active</span>
+            </div>
+            <div class="header-actions">
+                <div class="connection-indicator" id="connectionIndicator">
+                    <span class="conn-dot"></span>
+                    <span class="conn-text">Connecting</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Messages -->
+        <div class="messages-container" id="messagesContainer">
+            <!-- Welcome Message -->
+            <div class="welcome-screen" id="welcomeScreen">
+                <div class="welcome-icon">🏥</div>
+                <h2>Welcome to MediTriage</h2>
+                <p>I'm your AI medical coordinator. Describe your symptoms and I'll help you find the right doctor and book an appointment.</p>
+                <div class="welcome-features">
+                    <div class="feature-card">
+                        <span class="feature-icon">🔬</span>
+                        <span class="feature-label">Symptom Analysis</span>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🔍</span>
+                        <span class="feature-label">Medical Research</span>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">👨‍⚕️</span>
+                        <span class="feature-label">Doctor Matching</span>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">📅</span>
+                        <span class="feature-label">Appointment Booking</span>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🔔</span>
+                        <span class="feature-label">Staff Alerts</span>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🧠</span>
+                        <span class="feature-label">Patient Memory</span>
+                    </div>
+                </div>
+                <div class="welcome-examples">
+                    <p class="examples-title">Try saying:</p>
+                    <button class="example-btn" onclick="sendExample(this)">"I've been having persistent headaches and blurred vision for a week"</button>
+                    <button class="example-btn" onclick="sendExample(this)">"My child has had fever and cough for 3 days"</button>
+                    <button class="example-btn" onclick="sendExample(this)">"I have recurring back pain that won't go away"</button>
+                </div>
+            </div>
+
+            <!-- Messages will be inserted here -->
+            <div id="messagesList"></div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+            <div class="input-wrapper">
+                <textarea 
+                    id="messageInput" 
+                    placeholder="Describe your symptoms..." 
+                    rows="1"
+                    maxlength="2000"
+                ></textarea>
+                <button class="send-btn" id="sendBtn" disabled title="Send message">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13"></path>
+                        <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+                    </svg>
+                </button>
+            </div>
+            <p class="input-disclaimer">MediTriage AI helps coordinate appointments. It does not provide medical diagnoses.</p>
+        </div>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
